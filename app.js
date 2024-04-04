@@ -17,6 +17,10 @@ document.addEventListener("scroll", function () {
   woman.style.marginBottom = -value + "px";
   woman.style.marginLeft = -value + "px";
 
-  wavy1.style.marginBottom = -value * 1.1 + "px";
+  wavy1.style.marginBottom = -value * 1.5 + "px";
   table.style.marginBottom = -value * 1.2 + "px";
 });
+
+// document.addEventListener("resize", function() {
+//   let value = window.
+// })
