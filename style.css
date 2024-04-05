@@ -180,6 +180,11 @@ header nav a {
   /* text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25); */
 }
 
+header nav a.active {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
 header nav a:hover {
   text-decoration: underline;
   text-underline-offset: 5px;
@@ -197,7 +202,7 @@ header nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px 20px;
+  padding: 100px 20px 0 20px;
 }
 
 .content-bg .about-me {
@@ -215,10 +220,6 @@ header nav a:hover {
 .content h3 {
   font-size: 20px;
   margin: 10px 0;
-}
-
-.content p {
-  /* margin: px 0; */
 }
 
 .content-container {
@@ -294,6 +295,14 @@ header nav a:hover {
   .content h1 {
     font-size: 70px;
   }
+
+  .my-name {
+    text-align: center;
+  }
+
+  form {
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -312,4 +321,78 @@ header nav a:hover {
   .title a {
     font-size: 12px;
   }
+
+  .my-name {
+    font-size: 60px;
+    text-align: center;
+  }
+}
+
+footer {
+  margin: 100px 0;
+}
+
+footer .contact-box {
+  background: var(--secondary-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+  width: 70%;
+  margin: 20px auto;
+}
+
+footer .contact-box p {
+  margin: 0;
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-size: 24px;
+}
+
+footer .email-link:hover {
+  color: var(--tertiary-color);
+}
+
+footer .social-links a {
+  transition: all 100ms ease-in-out;
+  text-decoration: none;
+  color: var(--primary-color);
+  background-color: var(--tertiary-color);
+  padding: 10px 14px;
+  margin: 0 20px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  border: none;
+  font-size: 18px;
+
+  /* margin: 0 20px;
+  color: var(--branding-color);
+  background: var(--secondary-color);
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 100ms ease-in-out; */
+}
+
+footer .social-links a:hover {
+  background: var(--tertiary-color);
+}
+
+footer .contact-me {
+  text-decoration: none;
+  color: var(--primary-color);
+  background-color: var(--tertiary-color);
+  padding: 8px 10px;
+  width: 150px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  border: none;
+  margin-top: 20px;
+}
+
+footer div .contact-div {
+  margin-top: 18px;
 }
