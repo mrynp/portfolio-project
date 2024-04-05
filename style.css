@@ -329,7 +329,7 @@ header nav a:hover {
 }
 
 footer {
-  margin: 100px 0;
+  margin: 100px 0 50px 0;
 }
 
 footer .contact-box {
@@ -395,4 +395,12 @@ footer .contact-me {
 
 footer div .contact-div {
   margin-top: 18px;
+}
+
+.footer-note {
+  color: var(--tertiary-color);
+}
+.footer-note a {
+  color: var(--tertiary-color);
+  text-underline-offset: 5px;
 }
